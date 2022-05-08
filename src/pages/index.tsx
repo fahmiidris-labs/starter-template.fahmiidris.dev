@@ -19,8 +19,7 @@ HomePage.Props = {
   Layout: React.Fragment,
   meta: {
     title: 'Home',
-    description:
-      'Start your next next.js project with this starter template. Get started with Next.js on this awesome starter template.',
+    description: 'Start your next Next.js project with this starter template.',
   },
 };
 
