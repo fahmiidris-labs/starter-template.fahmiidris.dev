@@ -30,7 +30,7 @@ Router.events.on('routeChangeError', (): void => progress.finish());
 
 const defaultMeta: TProps['meta'] = {
   title: 'Stater Template',
-  description: 'Next.js + Tailwind CSS + TypeScript Starter Template.',
+  description: 'Documentation for Starter Template.',
   url: 'https://starter-template.fahmiidris.dev',
   image: 'https://starter-template.fahmiidris.dev/images/default-social-image.jpg',
   type: 'website',
