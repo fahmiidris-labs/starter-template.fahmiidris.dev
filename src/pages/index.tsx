@@ -4,6 +4,8 @@ import { ExternalLinkIcon } from '@heroicons/react/outline';
 import { Logo } from '@/components/logo';
 import { Link } from '@/components/link';
 
+import { ReactComponent as GitHubIcon } from '@/images/icons/github.svg';
+
 import type { TNextPageWithLayout } from 'next';
 
 type TStarterTemplate = {
@@ -16,22 +18,22 @@ const starterTemplates: TStarterTemplate[] = [
   {
     title: 'Next.js + Tailwind CSS + JavaScript',
     description: 'A starter template for Next.js with Tailwind CSS and JavaScript',
-    href: '',
+    href: 'https://www.github.com/fahmiidris-labs/js-nextjs-tailwindcss-starter-template',
   },
   {
     title: 'Next.js + Tailwind CSS + TypeScript',
     description: 'A starter template for Next.js with Tailwind CSS and TypeScript',
-    href: '',
+    href: 'https://www.github.com/fahmiidris-labs/ts-nextjs-tailwindcss-starter-template',
   },
   {
     title: 'CRA + Tailwind CSS + JavaScript',
     description: 'A starter template for CRA with Tailwind CSS and JavaScript',
-    href: '',
+    href: 'https://www.github.com/fahmiidris-labs/js-cra-tailwindcss-starter-template',
   },
   {
     title: 'CRA + Tailwind CSS + TypeScript',
     description: 'A starter template for CRA with Tailwind CSS and TypeScript',
-    href: '',
+    href: 'https://www.github.com/fahmiidris-labs/ts-cra-tailwindcss-starter-template',
   },
 ];
 
@@ -47,7 +49,15 @@ const HomePage: TNextPageWithLayout = (): JSX.Element => {
             </h1>
             <p className="text-sm text-slate-400">Start your project with this starter template.</p>
           </div>
-          <div className="py-8">
+          <div className="flex items-center justify-center gap-4 py-8">
+            <Link
+              href="https://github.com/fahmiidris-labs?tab=repositories&q=starter"
+              openNewTab={true}
+              className="inline-flex items-center justify-between space-x-2 rounded-lg border border-slate-300 bg-white py-2 pl-4 pr-3 text-sm font-semibold text-slate-700 hover:bg-slate-50 focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:ring-offset-2 dark:border-transparent dark:bg-slate-800 dark:text-slate-300 dark:ring-offset-slate-900 dark:hover:bg-slate-700"
+            >
+              <GitHubIcon className="h-5 w-5" />
+              <span>GitHub Repository</span>
+            </Link>
             <Link
               href="/docs"
               className="inline-flex items-center justify-between space-x-2 rounded-lg border border-slate-300 bg-white py-2 pl-4 pr-3 text-sm font-semibold text-slate-700 hover:bg-slate-50 focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:ring-offset-2 dark:border-transparent dark:bg-slate-800 dark:text-slate-300 dark:ring-offset-slate-900 dark:hover:bg-slate-700"
