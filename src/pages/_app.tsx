@@ -67,11 +67,9 @@ const MyApp = ({ Component, pageProps, router }: TAppPropsWithLayout): JSX.Eleme
 
         <link rel="canonical" href={`${meta.url}${router.asPath}`} />
       </Head>
-      <>
-        <Layout>
-          <Component {...pageProps} />
-        </Layout>
-      </>
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
     </>
   );
 };
