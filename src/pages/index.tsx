@@ -61,7 +61,7 @@ const HomePage: TNextPageWithLayout = (): JSX.Element => {
               Start your project with this starter template.
             </p>
           </div>
-          <div className="flex items-center justify-center gap-4 py-8">
+          <div className="flex items-center justify-center gap-4 py-10">
             <Link
               href="https://github.com/fahmiidris-labs?tab=repositories&q=starter"
               openNewTab={true}
@@ -78,7 +78,7 @@ const HomePage: TNextPageWithLayout = (): JSX.Element => {
               Documentation
             </Link>
           </div>
-          <div>
+          <div className="">
             <ul className="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 xl:grid-cols-3">
               {starterTemplates.map((starterTemplate) => (
                 <li key={starterTemplate.title} className="relative flex flex-row-reverse">
